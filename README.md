@@ -1,38 +1,23 @@
-Mars Photos
-==================================
+# User Directory App
 
-Mars Photos app is a demo app that shows actual images of Mars' surface. These images are
-real-life photos from Mars captured by NASA's Mars rovers. The data is stored on a Web server
-as a REST web service.
+An Android app built with Jetpack Compose that fetches and displays a list of user profiles from the internet.
 
-This app demonstrated the use of [Retrofit](https://square.github.io/retrofit/) to make REST requests to the web service, [kotlinx.serialization](https://github.com/Kotlin/kotlinx.serialization) to
-handle the deserialization of the returned JSON to Kotlin data objects, and [Coil](https://coil-kt.github.io/coil/) to load images by URL.
+## Features
+- Fetches 20 user profiles from the dummyjson.com API
+- Displays user profile pictures and full names in a scrollable list
 
-Pre-requisites
---------------
+## Technologies Used
+- Jetpack Compose
+- Material3
+- Retrofit (network requests)
+- Kotlin Coroutines
+- Coil (image loading)
+- ViewModel + sealed UI state
 
-You need to know:
-- How to create Composable functions.
-- How to use architecture components including ViewModel.
-- How to use coroutines for long-running tasks.
-- Familiarity with lazy grid
+## How to Run
+1. Clone the repository
+2. Open in Android Studio
+3. Run on an emulator or physical device with internet access
 
-Getting Started
----------------
-
-1. [Install Android Studio](https://developer.android.com/studio/install.html), if you don't already
-   have it.
-2. Download the sample.
-3. Import the sample into Android Studio.
-4. Build and run the sample.
-
-## [Build this app through hands-on codelabs in the Android Basics with Compose Course](https://developer.android.com/courses/android-basics-compose/course)
-
-### [Get data from the internet](https://developer.android.com/codelabs/basic-android-kotlin-compose-getting-data-internet)
-Learn how to use community-developed libraries to connect to a web service to retrieve and display data in your Android Kotlin compose app. 
-
-### [Add repository and Manual DI](https://developer.android.com/codelabs/basic-android-kotlin-compose-add-repository)
-Learn how to improve the architecture of the app by separating the network calls into a repository.
-
-### [Load and display images from the internet](https://developer.android.com/codelabs/basic-android-kotlin-compose-load-images)
-Use the Coil library to load and display photos from the internet in your Android Compose app. 
+## API
+Uses the [dummyjson.com](https://dummyjson.com/users?limit=20) users endpoint.
